@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/public", express.static(`${process.cwd()}/public`));
+app.use("/public", express.static(`/public`));
 
 //link validation regex
 const protocol_regex = /^\D{3,5}:\/\//;
